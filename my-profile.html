@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/dropzone.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="nav-link" href="home.html"><img src="img/okayturro.png" width="50" height="50"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="categories.html">Categorías</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="sell.html">Vender</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mr-5" id="verUsuario"></div>
+  </nav>
+  <div class="container">
+    <div class="row gutters-sm">
+        <div class="col-md-4 d-none d-md-block mt-5" id="verProfile">
+          <div class="card shadow-sm custom-card">
+            <div class="card-body">
+                <div class="text-center" id="imagen-perfil">
+                  <img src="" id="imagen-nueva" width="200" class="rounded-circle" alt="Cinque Terre">
+                </div>
+                <div class="container mt-2">
+                    <hr>
+                    <h6>Cambiar foto de perfil:</h6>
+                    <input type="file" id="imagenNueva" style="color: transparent;">
+                    <hr>
+                    <div id="infoPerfil">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card mt-5">
+                <div class="card-body tab-content">
+                    <div class="tab-pane active" id="profile">
+                        <h6 class="text-center"> <b> MODIFICAR DATOS PERSONALES </b></h6>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label for="nombreyapellido">Nombre y apellido* </label>
+                                <input type="text" class="form-control" id="nombreyapellido">
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    <label for="edad">Edad* </label>
+                                    <input type="number" class="form-control" min="18" max="99" id="edad">
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <label for="edad">Telefono de contacto* </label>
+                                    <input type="number" class="form-control" id="telcontacto">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="edad">E-mail* </label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+                            <button type="button" class="btn btn-outline-primary" onclick="guardarDatos()"> Guardar datos </button>
+                            <button type="button" class="btn btn-outline-danger" onclick="borrarDatos()">Borrar datos</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/dropzone.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/my-profile.js"></script>
+</body>
+
+</html>
